@@ -256,6 +256,10 @@ transform: rotate(30.0deg)
 transform: rotate( 0.0deg)
 }
 }
+.i{
+animation-name: fadeInOut, moveLeft300px, bounce;
+animation-duration: 2.5s, 5s;
+animation-iteration-count: 2, 1;}
 </style>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
   </head>
@@ -272,7 +276,7 @@ transform: rotate( 0.0deg)
       </div>
     </div>
     <div class="container">
-      <h1><div class="waving" data-hover="👋"></div> 😊Welcome to ToonFlix</h1>
+      <h1><div class="waving" data-hover="👋">😊</div>Welcome to <d class="i">ToonFlix</d> </h1>
       <p>Explore the beauty of dynamic backgrounds.</p>
       <a href="#features" class="cta-button">Learn More</a>
     </div>
