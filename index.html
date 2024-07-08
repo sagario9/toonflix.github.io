@@ -6,375 +6,192 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToonFlix</title>
 </head>
-
+<link rel="stylesheet" href="theme.css">
 <style>
-    body, html {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  min-height: 100%;
-  overflow-x: hidden;
-  font-family: 'Montserrat', sans-serif;
-  background: linear-gradient(to bottom, #0d0d2b, #000000);
-  color: white;
-}
+    /* For animating the hand */
+    .waving:before {
+        content: attr(data-hover);
+    }
 
-/* Custom scrollbar styling */
-::-webkit-scrollbar {
-  width: 6px;
-}
+    .waving:hover {
+        animation-name: wave-animation;
+        animation-duration: 3.0s;
+        animation-iteration-count: infinite;
+        transform-origin: 70% 70%;
+    }
 
-::-webkit-scrollbar-track {
-  background: #0C0C27;
-}
+    @keyframes wave-animation {
+        0% {
+            transform: rotate(0.0deg)
+        }
 
-::-webkit-scrollbar-thumb {
-  background: #ff4081;
-  border-radius: 6px;
-}
+        50% {
+            transform: rotate(30.0deg)
+        }
 
-::-webkit-scrollbar-thumb:hover {
-  background: #e00070;
-}
+        100% {
+            transform: rotate(0.0deg)
+        }
+    }
 
-.navbar {
-  position: fixed;
-  top: 40px; /* Added more margin-top */
-  left: 20px;
-  right: 20px;
-  padding: 10px 20px;
-  margin: 0 60px;
-  display: flex;
-  justify-content: space-between;
-  font-size: 16px;
-  align-items: center;
-  transition: background 0.3s, color 0.1s, top 0.3s, left 0.3s, right 0.3s, padding 0.3s, margin 0.3s, box-shadow 0.3s;
-  z-index: 1000;
-}
+    .i {
+        animation-name: fadeInOut, moveLeft300px, bounce;
+        animation-duration: 2.5s, 5s;
+        animation-iteration-count: 2, 1;
+    }
 
-.navbar.sticky {
-  background: #0C0C27;
-  color: #ff4081;
-  top: 0;
-  left: 0;
-  right: 0;
-  margin: 0;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* White shadow */
-}
 
-.navbar a {
-  color: inherit; /* Use inherit to ensure color change on scroll */
-  text-decoration: none;
-  font-weight: 600;
-  margin: 0 15px;
-  transition: color 0.3s;
-}
+    /* For the POP UP message */
 
-.container {
-  height: 100vh;
-  text-align: center;
-  padding: 50px 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  z-index: 2; /* Ensure content is above particles */
-}
+    #popupDialog {
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        z-index: 1000;
+        visibility: hidden;
+    }
 
-.container:nth-child(odd) {
-  background: rgba(0, 0, 0, 0.253);
-}
+    button {
+        padding: 10px 20px;
+        background-color: #00b7ff;
+        color: #ffffff;
+        border: black;
+        border-radius: 4px;
+        border-width: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+    }
 
-h1 {
-  font-size: 3em;
-  margin-bottom: 0.5em;
-}
-
-p {
-  font-size: 1.5em;
-  margin-bottom: 1em;
-}
-
-.cta-button {
-  background: linear-gradient(135deg, #ff4081, #e00070);
-  padding: 1em 2em;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  box-shadow: 0 0 15px rgba(255, 64, 129, 0.5);
-  transition: background 0.3s ease, box-shadow 0.3s ease;
-}
-
-.cta-button:hover {
-  background: linear-gradient(135deg, #e00070, #ff4081);
-  box-shadow: 0 0 25px rgba(255, 64, 129, 0.7);
-}
-
-.particles {
-  position: fixed; /* Changed to fixed */
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  z-index: 1; /* Ensure particles are below content */
-}
-
-.particle {
-  position: absolute;
-  width: 2px;
-  height: 2px;
-  background: white;
-  border-radius: 50%;
-  opacity: 0;
-  box-shadow: 0 0 5px 1px white;
-  animation: float 10s infinite;
-}
-
-@keyframes float {
-  0% {
-    transform: translateY(0) translateX(0);
-    opacity: 0.7;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(-100vh) translateX(calc(-50vw + 100%));
-    opacity: 0;
-  }
-}
-
-/* Small stars background */
-.star-background {
-  position: fixed; /* Changed to fixed */
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: transparent;
-  z-index: 0; /* Ensure star background is below everything */
-}
-
-.star {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  background: white;
-  opacity: 0.8;
-}
-
-/* Additional section styling */
-.features {
-  display: none;
-  justify-content: space-around;
-  align-items: center;
-  padding: 0px;
-}
-
-.feature-item {
-  max-width: 50%;
-  text-align: center;
-  padding: 20px;
-}
-
-.logos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 20px;
-}
-
-.logos img {
-  max-width: 200px;
-  margin: 20px;
-}
-
-.slider {
-  width: 80%;
-  max-width: 800px;
-  overflow: hidden;
-  position: relative;
-  margin: 20px auto;
-}
-
-.slides {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
-
-.slide {
-  min-width: 100%;
-  box-sizing: border-box;
-}
-
-.slider img {
-  width: 100%;
-  border-radius: 10px;
-}
-
-.slider-buttons {
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  transform: translateY(-50%);
-}
-
-.slider-button {
-  background: rgba(0, 0, 0, 0.5);
-  border: none;
-  color: white;
-  padding: 10px;
-  cursor: pointer;
-}
-
-/* For animating the hand */
-.waving:before {
-content: attr(data-hover);
-}
-
-.waving:hover {
-animation-name: wave-animation;
-animation-duration: 3.0s;
-animation-iteration-count: infinite;
-transform-origin: 70% 70%;
-}
-
-@keyframes wave-animation {
-0% {
-transform: rotate( 0.0deg)
-}
-50% {
-transform: rotate(30.0deg)
-}
-100% {
-transform: rotate( 0.0deg)
-}
-}
-.i{
-animation-name: fadeInOut, moveLeft300px, bounce;
-animation-duration: 2.5s, 5s;
-animation-iteration-count: 2, 1;}
+    button:hover {
+        background-color: #ae00fe;
+    }
 </style>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-  </head>
-  <body>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
     <div class="navbar" id="navbar">
-      <div class="logo">
-        <a href="#" style="font-size: 20px;">ToonFlix</a>
-      </div>
-      <div class="nav-links">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Contact</a>
-      </div>
+        <div class="logo">
+            <a href="index.html" style="font-size: 20px;">ToonFlix</a>
+        </div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="about.html">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+
+
+
+
+    <div class="container">
+        <h1>
+            <div class="waving" data-hover="👋">😊</div>Welcome to <d class="i">ToonFlix</d>
+        </h1>
+        <p>Explore Your Favourive Catoons and Animes.</p>
+
+
+        <div id="popupContainer">
+            <button onclick="openPop()">
+
+                <a href="#features" class="cta-button">Watch Now</a>
+
+            </button>
+            <div id="popupDialog">
+                <p style="color: black;">Please Scroll down and click your favourite caroon image in Feature section</p>
+                <button onclick="openPop()">
+                    Close
+                </button>
+            </div>
+        </div>
+
+
+
+
     </div>
     <div class="container">
-      <h1><div class="waving" data-hover="👋">😊</div>Welcome to <d class="i">ToonFlix</d> </h1>
-      <p>Explore the beauty of dynamic backgrounds.</p>
-      <a href="#features" class="cta-button">Learn More</a>
+        <h1>Features</h1>
+        <div class="features">
+            <div class="feature-item">
+                <h2>Doraemon</h2>
+                <p>Watch</p>
+            </div>
+            <div class="feature-item">
+                <h2>ShinChan</h2>
+                <p>watch</p>
+            </div>
+            <div class="feature-item">
+                <h2>Naruto</h2>
+                <p>watch</p>
+            </div>
+        </div>
+
+        <script>
+            function openPop() {
+                const popDialog =
+                    document.getElementById(
+                        "popupDialog"
+                    );
+                popDialog.style.visibility =
+                    popDialog.style.visibility ===
+                        "visible"
+                        ? "hidden"
+                        : "visible";
+            }
+        </script>
+
+
+
+
+        <!-- <iframe width="100%" height="100%" frameborder="0"
+        src="https://1024terabox.com/sharing/embed?surl=Sm0O_0HmlHWUDiZ7bbWfmw&resolution=720&autoplay=true&mute=false&uk=4401128819417&fid=675856027268805&slid="
+        allowfullscreen></iframe> -->
+
+        <div class="logos">
+            <a href="shinchan.html"><img
+                    src="https://rukminim2.flixcart.com/image/850/1000/xif0q/magnet/e/4/m/10-shinchan-wooden-fridge-magnet-fun-comic-character-gift-and-original-imagyyaswzffp7f6.jpeg?q=90&crop=false"
+                    alt="Logo 1"> </a>
+            <a href="doraemon.html">
+                <img src="https://i.pinimg.com/originals/58/76/8a/58768acee8ebc386b0c4c66ca502658f.jpg"
+                    alt="Logo 2"></a>
+            <a href="naruto.html">
+                <img src="https://wallpapers.com/images/hd/naruto-profile-pictures-sa1tekghfajrr928.jpg"
+                    alt="Logo 3"></a>
+            <!-- <img src="https://via.placeholder.com/100" alt="Logo 4"> -->
+        </div>
     </div>
     <div class="container">
-      <h1>Features</h1>
-      <div class="features">
-        <div class="feature-item">
-          <h2>Doraemon</h2>
-          <p>Watch</p>
+        <h1>Let's Goo..</h1>
+        <div class="slider">
+            <div class="slides">
+                <div class="slide"><img src="https://wallpaperset.com/w/full/5/c/7/232750.jpg" alt="Slide 1"></div>
+                <div class="slide"><img
+                        src="https://wallpapers.com/images/high/shin-chan-mexican-hat-8g40mvp3fvv0993f.webp"
+                        alt="Slide 2"></div>
+                <div class="slide"><img
+                        src="https://wallpapers.com/images/high/jinchuriki-naruto-4k-x4hkkoiafno7wh1t.webp"
+                        alt="Slide 3"></div>
+                <!-- <div class="slide"><img src="https://via.placeholder.com/800x400" alt="Slide 3"></div> -->
+            </div>
+            <div class="slider-buttons">
+                <button class="slider-button" id="prevBtn">&#10094;</button>
+                <button class="slider-button" id="nextBtn">&#10095;</button>
+            </div>
         </div>
-        <div class="feature-item">
-          <h2>ShinChan</h2>
-          <p>watch</p>
-        </div>
-        <div class="feature-item">
-          <h2>Naruto</h2>
-          <p>watch</p>
-        </div>
-      </div>
-      <div class="logos">
-        <img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/magnet/e/4/m/10-shinchan-wooden-fridge-magnet-fun-comic-character-gift-and-original-imagyyaswzffp7f6.jpeg?q=90&crop=false" alt="Logo 1">
-        <img src="https://i.pinimg.com/originals/58/76/8a/58768acee8ebc386b0c4c66ca502658f.jpg" alt="Logo 2">
-        <img src="https://wallpapers.com/images/hd/naruto-profile-pictures-sa1tekghfajrr928.jpg" alt="Logo 3">
-        <!-- <img src="https://via.placeholder.com/100" alt="Logo 4"> -->
-      </div>
-    </div>
-    <div class="container">
-      <h1>Let's Goo..</h1>
-      <div class="slider">
-        <div class="slides">
-          <div class="slide"><img src="https://wallpaperset.com/w/full/5/c/7/232750.jpg" alt="Slide 1"></div>
-          <div class="slide"><img src="https://wallpapers.com/images/high/shin-chan-mexican-hat-8g40mvp3fvv0993f.webp" alt="Slide 2"></div>
-          <div class="slide"><img src="https://wallpapers.com/images/high/jinchuriki-naruto-4k-x4hkkoiafno7wh1t.webp" alt="Slide 3"></div>
-          <!-- <div class="slide"><img src="https://via.placeholder.com/800x400" alt="Slide 3"></div> -->
-        </div>
-        <div class="slider-buttons">
-          <button class="slider-button" id="prevBtn">&#10094;</button>
-          <button class="slider-button" id="nextBtn">&#10095;</button>
-        </div>
-      </div>
     </div>
     <div class="particles"></div>
     <div class="star-background"></div>
 </body>
+
+<script src="theme.js"></script>
 <script>
-    window.onscroll = function() {stickNavbar()};
 
-const navbar = document.getElementById("navbar");
-const sticky = navbar.offsetTop;
-
-function stickNavbar() {
-  if (window.pageYOffset > sticky) {
-    navbar.classList.add("sticky");
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
-
-const particleContainer = document.querySelector('.particles');
-const starBackground = document.querySelector('.star-background');
-
-for (let i = 0; i < 100; i++) {
-  const particle = document.createElement('div');
-  particle.classList.add('particle');
-  particle.style.top = `${Math.random() * 100}vh`;
-  particle.style.left = `${Math.random() * 100}vw`;
-  particle.style.animationDelay = `${Math.random() * 10}s`;
-  particleContainer.appendChild(particle);
-}
-
-for (let i = 0; i < 300; i++) {
-  const star = document.createElement('div');
-  star.classList.add('star');
-  star.style.top = `${Math.random() * 100}vh`;
-  star.style.left = `${Math.random() * 100}vw`;
-  starBackground.appendChild(star);
-}
-
-// Slider functionality
-const slides = document.querySelector('.slides');
-const slide = document.querySelectorAll('.slide');
-const prevBtn = document.getElementById('prevBtn');
-const nextBtn = document.getElementById('nextBtn');
-
-let index = 0;
-
-function showSlide(n) {
-  index += n;
-  if (index >= slide.length) {
-    index = 0;
-  }
-  if (index < 0) {
-    index = slide.length - 1;
-  }
-  slides.style.transform = 'translateX(' + (-index * 100) + '%)';
-}
-
-prevBtn.addEventListener('click', () => showSlide(-1));
-nextBtn.addEventListener('click', () => showSlide(1));
 </script>
+
 </html>
