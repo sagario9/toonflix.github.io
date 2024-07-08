@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-32">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToonFlix</title>
+</head>
+<link rel="stylesheet" href="theme.css">
+<style>
+    /* For animating the hand */
+    .waving:before {
+        content: attr(data-hover);
+    }
+
+    .waving:hover {
+        animation-name: wave-animation;
+        animation-duration: 3.0s;
+        animation-iteration-count: infinite;
+        transform-origin: 70% 70%;
+    }
+
+    @keyframes wave-animation {
+        0% {
+            transform: rotate(0.0deg)
+        }
+
+        50% {
+            transform: rotate(30.0deg)
+        }
+
+        100% {
+            transform: rotate(0.0deg)
+        }
+    }
+
+    .i {
+        animation-name: fadeInOut, moveLeft300px, bounce;
+        animation-duration: 2.5s, 5s;
+        animation-iteration-count: 2, 1;
+    }
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="navbar" id="navbar">
+        <div class="logo">
+            <a href="index.html" style="font-size: 20px;">ToonFlix</a>
+        </div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="about.html">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <h1>
+            <div class="waving" data-hover="👋">😊</div>Welcome to <d class="i">ToonFlix</d>
+        </h1>
+        <p>Explore Your Favourive Catoons and Animes.</p>
+        <!-- <a href="#features" class="cta-button">Watch Now</a>--><br><br><br><br> 
+        <h1 style="color: rgb(0, 217, 255); text-align: center;">ABOUT ME</h1>
+        <p style="text-align: center;">Hello there I am Saikat.</p>
+        <p style="text-align: center;">Ex - KVIAN</p>
+        <p style="text-align: center;">I just made this project only for entertainment purpose. Enjoy :-)</p>
+    </div>
+    
+    <!-- <div class="me" style="text-align: center;"> -->
+        <!-- <p style="text-align: center;">Hello there I am Saikat.</p>
+        <p style="text-align: center;">Ex - KVIAN</p>
+        <p style="text-align: center;">I just made this project only for entertainment purpose. Enjoy :-)</p>
+    </div> -->
+
+    <div class="container">
+        <h1>Features</h1>
+        <div class="features">
+            <div class="feature-item">
+                <h2>Doraemon</h2>
+                <p>Watch</p>
+            </div>
+            <div class="feature-item">
+                <h2>ShinChan</h2>
+                <p>watch</p>
+            </div>
+            <div class="feature-item">
+                <h2>Naruto</h2>
+                <p>watch</p>
+            </div>
+        </div>
+
+
+        <!-- <iframe width="100%" height="100%" frameborder="0"
+        src="https://1024terabox.com/sharing/embed?surl=Sm0O_0HmlHWUDiZ7bbWfmw&resolution=720&autoplay=true&mute=false&uk=4401128819417&fid=675856027268805&slid="
+        allowfullscreen></iframe> -->
+
+        <div class="logos">
+            <a href="shinchan.html"><img
+                    src="https://rukminim2.flixcart.com/image/850/1000/xif0q/magnet/e/4/m/10-shinchan-wooden-fridge-magnet-fun-comic-character-gift-and-original-imagyyaswzffp7f6.jpeg?q=90&crop=false"
+                    alt="Logo 1"> </a>
+            <a href="doraemon.html">
+                <img src="https://i.pinimg.com/originals/58/76/8a/58768acee8ebc386b0c4c66ca502658f.jpg"
+                    alt="Logo 2"></a>
+            <a href="naruto.html">
+                <img src="https://wallpapers.com/images/hd/naruto-profile-pictures-sa1tekghfajrr928.jpg"
+                    alt="Logo 3"></a>
+                    <!-- <img src="https://via.placeholder.com/100" alt="Logo 4"> -->
+        </div>
+    </div>
+    <div class="container">
+        <h1>Let's Goo..</h1>
+        <div class="slider">
+            <div class="slides">
+                <div class="slide"><img src="https://wallpaperset.com/w/full/5/c/7/232750.jpg" alt="Slide 1"></div>
+                <div class="slide"><img
+                        src="https://wallpapers.com/images/high/shin-chan-mexican-hat-8g40mvp3fvv0993f.webp"
+                        alt="Slide 2"></div>
+                <div class="slide"><img
+                        src="https://wallpapers.com/images/high/jinchuriki-naruto-4k-x4hkkoiafno7wh1t.webp"
+                        alt="Slide 3"></div>
+                <!-- <div class="slide"><img src="https://via.placeholder.com/800x400" alt="Slide 3"></div> -->
+            </div>
+            <div class="slider-buttons">
+                <button class="slider-button" id="prevBtn">&#10094;</button>
+                <button class="slider-button" id="nextBtn">&#10095;</button>
+            </div>
+        </div>
+    </div>
+    <div class="particles"></div>
+    <div class="star-background"></div>
+</body>
+
+<script src="theme.js"></script>
+<script>
+
+</script>
+
+</html>
