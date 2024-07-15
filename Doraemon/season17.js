@@ -26,6 +26,31 @@ var btn22 = document.getElementById("btn22");
 var btn23 = document.getElementById("btn23");
 var btn24 = document.getElementById("btn24");
 var btn25 = document.getElementById("btn25");
+var btn26 = document.getElementById("btn26");
+var btn27 = document.getElementById("btn27");
+var btn28 = document.getElementById("btn28");
+var btn29 = document.getElementById("btn29");
+var btn30 = document.getElementById("btn30");
+var btn31 = document.getElementById("btn31");
+var btn32 = document.getElementById("btn32");
+var btn33 = document.getElementById("btn33");
+var btn34 = document.getElementById("btn34");
+var btn35 = document.getElementById("btn35");
+var btn36 = document.getElementById("btn36");
+var btn37 = document.getElementById("btn37");
+var btn38 = document.getElementById("btn38");
+var btn39 = document.getElementById("btn39");
+var btn40 = document.getElementById("btn40");
+var btn41 = document.getElementById("btn41");
+var btn42 = document.getElementById("btn42");
+var btn43 = document.getElementById("btn43");
+var btn44 = document.getElementById("btn44");
+var btn45 = document.getElementById("btn45");
+var btn46 = document.getElementById("btn46");
+var btn47 = document.getElementById("btn47");
+var btn48 = document.getElementById("btn48");
+var btn49 = document.getElementById("btn49");
+var btn50 = document.getElementById("btn50");
 
 
 btn1.addEventListener("click", link1)
@@ -53,82 +78,188 @@ btn22.addEventListener("click", link22)
 btn23.addEventListener("click", link23)
 btn24.addEventListener("click", link24)
 btn25.addEventListener("click", link25)
+btn26.addEventListener("click", link26)
+btn27.addEventListener("click", link27)
+btn28.addEventListener("click", link28)
+btn29.addEventListener("click", link29)
+btn30.addEventListener("click", link30)
+btn31.addEventListener("click", link31)
+btn32.addEventListener("click", link32)
+btn33.addEventListener("click", link33)
+btn34.addEventListener("click", link34)
+btn35.addEventListener("click", link35)
+btn36.addEventListener("click", link36)
+btn37.addEventListener("click", link37)
+btn38.addEventListener("click", link38)
+btn39.addEventListener("click", link39)
+btn40.addEventListener("click", link40)
+btn41.addEventListener("click", link41)
+btn42.addEventListener("click", link42)
+btn43.addEventListener("click", link43)
+btn44.addEventListener("click", link44)
+btn45.addEventListener("click", link45)
+btn46.addEventListener("click", link46)
+btn47.addEventListener("click", link47)
+btn48.addEventListener("click", link48)
+btn49.addEventListener("click", link49)
+btn50.addEventListener("click", link50)
 
 
 function link1() {
-    frame.src = "https://1024terabox.com/sharing/embed?surl=C8-zoZM9fg-ucB8PuTqjBA&resolution=720&autoplay=true&mute=false&uk=4401128819417&fid=675856027268805&slid="
+    frame.src = "https://1024terabox.com/sharing/embed?surl=5SVqm5__1hbCtPqDHxw3CA&resolution=720&autoplay=true&mute=false&uk=4401128819417&fid=571337145994144&slid="
 }
 function link2() {
-    frame.src = "https://1024terabox.com/sharing/embed?surl=n7BEIKnbFf96xB4FUDIGRA&resolution=720&autoplay=true&mute=false&uk=4401128819417&fid=1031710490755985&slid="
+    frame.src = "https://1024terabox.com/sharing/embed?surl=zwJWqSynsEqBxrSFXy9Qcg&resolution=720&autoplay=true&mute=false&uk=4401128819417&fid=365589921780589&slid="
 }
 function link3() {
-    frame.src = "https://1024terabox.com/sharing/embed?surl=zWQrAI_UgZW-JhueCk-MiA&resolution=720&autoplay=true&mute=false&uk=4401128819417&fid=385320492472200&slid="
+    frame.src = "https://1024terabox.com/sharing/embed?surl=oqWlytIPCJ5VYOZ6hIPraw&resolution=720&autoplay=true&mute=false&uk=4401128819417&fid=1054846238840486&slid="
 }
 function link4() {
-    frame.src = "https://1024terabox.com/sharing/embed?surl=eefi0D8_VhOeRbTum2PVug&resolution=720&autoplay=true&mute=false&uk=4401128819417&fid=503428668008155&slid="
+    frame.src = "https://1024terabox.com/sharing/embed?surl=8z-QOueDIZGcT4qR05gzoQ&resolution=720&autoplay=true&mute=false&uk=4401128819417&fid=107762565253796&slid="
 }
 function link5() {
-    frame.src = "https://1024terabox.com/sharing/embed?surl=VvOyk-5rnK-ohJuFMh3faA&resolution=720&autoplay=true&mute=false&uk=4401128819417&fid=291161462668841&slid="
+    frame.src = "https://1024terabox.com/sharing/embed?surl=aJKk026uwdGHdtIBUqlUIQ&resolution=720&autoplay=true&mute=false&uk=4401128819417&fid=528880168795239&slid="
 }
 function link6() {
-    frame.src = "https://1024terabox.com/sharing/embed?surl=PyLYzpaEDctIe1IXLmJP1w&resolution=720&autoplay=true&mute=false&uk=4401128819417&fid=894187396291394&slid="
+    frame.src = "https://1024terabox.com/sharing/embed?surl=H5YyTf5zbiEk6_lYp5EYvA&resolution=720&autoplay=true&mute=false&uk=4401128819417&fid=387804830867742&slid="
 }
 function link7() {
-    frame.src = "https://1024terabox.com/sharing/embed?surl=IlwXFC5SJkWy2Tt8YE0MUQ&resolution=720&autoplay=true&mute=false&uk=4401128819417&fid=501698378066388&slid="
+    frame.src = "https://1024terabox.com/sharing/embed?surl=52mEkt5X1YQdgbfjpSZouQ&resolution=720&autoplay=true&mute=false&uk=4401128819417&fid=842515646514370&slid="
 }
 function link8() {
-    frame.src = "https://1024terabox.com/sharing/embed?surl=6pIeiUkrP8mgoc5aZDGI6g&resolution=720&autoplay=true&mute=false&uk=4401128819417&fid=111064653311982&slid="
+    frame.src = "https://1024terabox.com/sharing/embed?surl=d4lmXXueRwkRgnBSaxixWg&resolution=720&autoplay=true&mute=false&uk=4401128819417&fid=839740775136487&slid="
 }
 function link9() {
-    frame.src = "https://1024terabox.com/sharing/embed?surl=9ws6borQFOSCVnkaK7rUgA&resolution=720&autoplay=true&mute=false&uk=4401128819417&fid=204666811311902&slid="
+    frame.src = "https://1024terabox.com/sharing/embed?surl=096iiIWsodgWl0DF6TI4lQ&resolution=720&autoplay=true&mute=false&uk=4401128819417&fid=1034695469242405&slid="
 }
 function link10() {
-    frame.src = "https://1024terabox.com/sharing/embed?surl=3TgRg8KvycCvtIH0NeBGbQ&resolution=720&autoplay=true&mute=false&uk=4401128819417&fid=811219238028812&slid="
+    frame.src = "https://1024terabox.com/sharing/embed?surl=PMxVKyjhiAAsPE87XAWDtw&resolution=720&autoplay=true&mute=false&uk=4401128819417&fid=950010703161371&slid="
 }
 function link11() {
-    frame.src = "https://1024terabox.com/sharing/embed?surl=thrsRjqD8XZ_Ss3j_O76bA&resolution=720&autoplay=true&mute=false&uk=4401128819417&fid=16412216027347&slid="
+    frame.src = "https://1024terabox.com/sharing/embed?surl=2YbE2mm6fvVmwoXTmXjUrA&resolution=720&autoplay=true&mute=false&uk=4401128819417&fid=860301651354497&slid="
 }
 function link12() {
-    frame.src = "https://1024terabox.com/sharing/embed?surl=KYLZWCn1r66hq-byPaD1UA&resolution=720&autoplay=true&mute=false&uk=4401128819417&fid=37879830319829&slid="
+    frame.src = "https://1024terabox.com/sharing/embed?surl=NOXMaAUN-yFrQmm2xOLv3g&resolution=720&autoplay=true&mute=false&uk=4401128819417&fid=307662798983113&slid="
 }
 function link13() {
-    frame.src = "https://1024terabox.com/sharing/embed?surl=eTd0jV1lstgmrNUdXlcbgQ&resolution=720&autoplay=true&mute=false&uk=4401128819417&fid=1012672889017008&slid="
+    frame.src = "https://1024terabox.com/sharing/embed?surl=wEHIig-6LAxV3dMWDC5WcA&resolution=720&autoplay=true&mute=false&uk=4401128819417&fid=992676899613004&slid="
 }
 function link14() {
-    frame.src = "https://1024terabox.com/sharing/embed?surl=9hOezAvT5a-f2SgB5hCIWg&resolution=720&autoplay=true&mute=false&uk=4401128819417&fid=133861856453099&slid="
+    frame.src = "https://1024terabox.com/sharing/embed?surl=wZxn9Hfewk_MXfKsAZe97w&resolution=720&autoplay=true&mute=false&uk=4401128819417&fid=691107120966104&slid="
 }
 function link15() {
-    frame.src = "https://1024terabox.com/sharing/embed?surl=THa5k9XT8XGNfisStEKmZQ&resolution=720&autoplay=true&mute=false&uk=4401128819417&fid=75203860019671&slid="
+    frame.src = "https://1024terabox.com/sharing/embed?surl=aK5RUk6wAodvi3UDsIupvw&resolution=720&autoplay=true&mute=false&uk=4401128819417&fid=750800126153774&slid="
 }
 function link16() {
-    frame.src = "https://1024terabox.com/sharing/embed?surl=5i-8hMos6ZPTxQxZWKRPhQ&resolution=720&autoplay=true&mute=false&uk=4401128819417&fid=432047746210280&slid="
+    frame.src = "https://1024terabox.com/sharing/embed?surl=C-S_G7fi_FL2ipgzNREeJQ&resolution=720&autoplay=true&mute=false&uk=4401128819417&fid=214338702271103&slid="
 }
 function link17() {
-    frame.src = "https://1024terabox.com/sharing/embed?surl=tlwZL4xjpnbsbb2iLARXrg&resolution=720&autoplay=true&mute=false&uk=4401128819417&fid=999922569439725&slid="
+    frame.src = "https://1024terabox.com/sharing/embed?surl=PQ2mkDKL1-mUzg06r3REOg&resolution=720&autoplay=true&mute=false&uk=4401128819417&fid=1108327713717061&slid="
 }
 function link18() {
-    frame.src = "https://1024terabox.com/sharing/embed?surl=HZP1Jz2zrb-IDzGx4gYiog&resolution=720&autoplay=true&mute=false&uk=4401128819417&fid=885142171213706&slid="
+    frame.src = "https://1024terabox.com/sharing/embed?surl=zrNbwQy8zIr7CZmJTeOURg&resolution=720&autoplay=true&mute=false&uk=4401128819417&fid=30908910319979&slid="
 }
 function link19() {
-    frame.src = "https://1024terabox.com/sharing/embed?surl=rgWSVnnoeAE0uLBvw6gMsQ&resolution=720&autoplay=true&mute=false&uk=4401128819417&fid=762697972613031&slid="
+    frame.src = "https://1024terabox.com/sharing/embed?surl=YzLStDZIoSm-41gMzTwCvw&resolution=720&autoplay=true&mute=false&uk=4401128819417&fid=866818289552831&slid="
 }
 function link20() {
-    frame.src = "https://1024terabox.com/sharing/embed?surl=IyWPcUJ-Ff28mS3ieGVxRw&resolution=720&autoplay=true&mute=false&uk=4401128819417&fid=295661235051507&slid="
+    frame.src = "https://1024terabox.com/sharing/embed?surl=Ovl7BaUzYjZvg29HIDHUQQ&resolution=720&autoplay=true&mute=false&uk=4401128819417&fid=703334858730360&slid="
 }
 function link21() {
-    frame.src = "https://1024terabox.com/sharing/embed?surl=rm_X2rITSeNzbBl9XFVLJw&resolution=720&autoplay=true&mute=false&uk=4401128819417&fid=501795741429245&slid="
+    frame.src = "https://1024terabox.com/sharing/embed?surl=PEmMPWkZIF_ABS0N51G_9w&resolution=720&autoplay=true&mute=false&uk=4401128819417&fid=13362440020495&slid="
 }
 function link22() {
-    frame.src = "https://1024terabox.com/sharing/embed?surl=ECfaMmwyL6MH5KR3chQmHQ&resolution=720&autoplay=true&mute=false&uk=4401128819417&fid=1120521059203398&slid="
+    frame.src = "https://1024terabox.com/sharing/embed?surl=OFwK35eK1lNP50CSwIu4zA&resolution=720&autoplay=true&mute=false&uk=4401128819417&fid=583249688811730&slid="
 }
 function link23() {
-    frame.src = "https://1024terabox.com/sharing/embed?surl=J163pYtS6JRyFSJp0Is9Kg&resolution=720&autoplay=true&mute=false&uk=4401128819417&fid=676128551666017&slid="
+    frame.src = "https://1024terabox.com/sharing/embed?surl=5CDmmPYS4e4ftvb4ODxs5w&resolution=720&autoplay=true&mute=false&uk=4401128819417&fid=504499268205284&slid="
 }
 function link24() {
-    frame.src = "https://1024terabox.com/sharing/embed?surl=o0X2rpUOmtbURYy5wFwRgw&resolution=720&autoplay=true&mute=false&uk=4401128819417&fid=726582790606168&slid="
+    frame.src = "https://1024terabox.com/sharing/embed?surl=uJe5C1U4V6Rd2urTDk6Luw&resolution=720&autoplay=true&mute=false&uk=4401128819417&fid=280981300700851&slid="
 }
 function link25() {
-    frame.src = "https://1024terabox.com/sharing/embed?surl=h-NBftC781AUoayX5zoisQ&resolution=720&autoplay=true&mute=false&uk=4401128819417&fid=682739188139475&slid="
+    frame.src = "https://1024terabox.com/sharing/embed?surl=Kdu0gm_k_sOYoapnyjNBeg&resolution=720&autoplay=true&mute=false&uk=4401128819417&fid=595222404477599&slid="
+}
+function link26() {
+    frame.src = "https://1024terabox.com/sharing/embed?surl=S9r1fFBb9gCpm8mdVCAc_g&resolution=720&autoplay=true&mute=false&uk=4401128819417&fid=282920441271260&slid="
+}
+function link27() {
+    frame.src = "https://1024terabox.com/sharing/embed?surl=DZAHw9f1V8J_qcSZkVjGjg&resolution=720&autoplay=true&mute=false&uk=4401128819417&fid=1089792656513572&slid="
+}
+function link28() {
+    frame.src = "https://1024terabox.com/sharing/embed?surl=iK1bAj-JxH-ejJtp3g6_wg&resolution=720&autoplay=true&mute=false&uk=4401128819417&fid=255526791359688&slid="
+}
+function link29() {
+    frame.src = "https://1024terabox.com/sharing/embed?surl=-o_esk2iHVHz6uWaXMx2Mw&resolution=720&autoplay=true&mute=false&uk=4401128819417&fid=232849919809223&slid="
+}
+function link30() {
+    frame.src = "https://1024terabox.com/sharing/embed?surl=qO-goUFBoT1zD8LC-xAGKA&resolution=720&autoplay=true&mute=false&uk=4401128819417&fid=1067531041241479&slid="
+}
+function link31() {
+    frame.src = "https://1024terabox.com/sharing/embed?surl=4GdG2L-n7rCGnDqMjycbBg&resolution=720&autoplay=true&mute=false&uk=4401128819417&fid=891577116181512&slid="
+}
+function link32() {
+    frame.src = "https://1024terabox.com/sharing/embed?surl=f4ptNgH3IpZQfbiHZOgZkg&resolution=720&autoplay=true&mute=false&uk=4401128819417&fid=521010067813866&slid="
+}
+function link33() {
+    frame.src = "https://1024terabox.com/sharing/embed?surl=Eownon6RDZjeFYVoQqlEZQ&resolution=720&autoplay=true&mute=false&uk=4401128819417&fid=1084879601840516&slid="
+}
+function link33() {
+    frame.src = "https://1024terabox.com/sharing/embed?surl=HKeyuKg6KhRwJNcT-Eqzsw&resolution=720&autoplay=true&mute=false&uk=4401128819417&fid=52685217980753&slid="
+}
+function link34() {
+    frame.src = "https://1024terabox.com/sharing/embed?surl=3z8XX2muiVsPZQWgLUyFOQ&resolution=720&autoplay=true&mute=false&uk=4401128819417&fid=487794619117599&slid="
+}
+function link34() {
+    frame.src = "https://1024terabox.com/sharing/embed?surl=DdnlNwZM4wcrlOM-eq1f-g&resolution=720&autoplay=true&mute=false&uk=4401128819417&fid=469472689061820&slid="
+}
+function link35() {
+    frame.src = "https://1024terabox.com/sharing/embed?surl=6VorD4PND9o3ko1ss44Xew&resolution=720&autoplay=true&mute=false&uk=4401128819417&fid=331327822705928&slid="
+}
+function link36() {
+    frame.src = "https://1024terabox.com/sharing/embed?surl=QLEWd8SVfyJxC6jEc2s9KA&resolution=720&autoplay=true&mute=false&uk=4401128819417&fid=784842628849282&slid="
+}
+function link37() {
+    frame.src = "https://1024terabox.com/sharing/embed?surl=I7pk71poKkv8lfGd0vYTvw&resolution=720&autoplay=true&mute=false&uk=4401128819417&fid=1007479741503433&slid="
+}
+function link38() {
+    frame.src = "https://1024terabox.com/sharing/embed?surl=5tQMw-UVqwUIncpadUrakA&resolution=720&autoplay=true&mute=false&uk=4401128819417&fid=617868283870336&slid="
+}
+function link39() {
+    frame.src = "https://1024terabox.com/sharing/embed?surl=gOxJ88ko7PEGd1ozmfh5WQ&resolution=720&autoplay=true&mute=false&uk=4401128819417&fid=982185821232530&slid="
+}
+function link40() {
+    frame.src = "https://1024terabox.com/sharing/embed?surl=ALJxd48PDoFB9LEMV-I_fg&resolution=720&autoplay=true&mute=false&uk=4401128819417&fid=102837032027275&slid="
+}
+function link41() {
+    frame.src = "https://1024terabox.com/sharing/embed?surl=f9-Omox9nzaMwpnafas_mw&resolution=720&autoplay=true&mute=false&uk=4401128819417&fid=236331740967917&slid="
+}
+function link42() {
+    frame.src = "https://1024terabox.com/sharing/embed?surl=Hi6DW1D6un09pW4xxJTENA&resolution=720&autoplay=true&mute=false&uk=4401128819417&fid=248302645399354&slid="
+}
+function link43() {
+    frame.src = "https://1024terabox.com/sharing/embed?surl=m2nuRwx5gLzegRsz5U0eUw&resolution=720&autoplay=true&mute=false&uk=4401128819417&fid=417354739755733&slid="
+}
+function link44() {
+    frame.src = "https://1024terabox.com/sharing/embed?surl=pW38vH-p2hgw7oOqMr-_wg&resolution=720&autoplay=true&mute=false&uk=4401128819417&fid=401689599705024&slid="
+}
+function link45() {
+    frame.src = "https://1024terabox.com/sharing/embed?surl=97HUglQCz9jPi5ZLxOtQXg&resolution=720&autoplay=true&mute=false&uk=4401128819417&fid=701522790014021&slid="
+}
+function link46() {
+    frame.src = "https://1024terabox.com/sharing/embed?surl=CbjiBdF5LeiZEwufOc79UA&resolution=720&autoplay=true&mute=false&uk=4401128819417&fid=96123035909815&slid="
+}
+function link47() {
+    frame.src = "https://1024terabox.com/sharing/embed?surl=NsPa8VcEEGSzaZgJavlupg&resolution=720&autoplay=true&mute=false&uk=4401128819417&fid=948660121845725&slid="
+}
+function link48() {
+    frame.src = "https://1024terabox.com/sharing/embed?surl=dXnX9a7r56ZnojNZg1qUgA&resolution=720&autoplay=true&mute=false&uk=4401128819417&fid=439464813147579&slid="
+}
+function link49() {
+    frame.src = "https://1024terabox.com/sharing/embed?surl=4hcamWglL3ON7mu5oOjXFQ&resolution=720&autoplay=true&mute=false&uk=4401128819417&fid=934590449296979&slid="
+}
+function link50() {
+    frame.src = "https://1024terabox.com/sharing/embed?surl=3WmdVt8HKk83_Ec8E4SheA&resolution=720&autoplay=true&mute=false&uk=4401128819417&fid=1089137344570806&slid="
 }
 
 // This code is provided by S.K.S
